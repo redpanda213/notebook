@@ -1,0 +1,340 @@
+Xshell 6 (Build 0146)
+Copyright (c) 2002 NetSarang Computer, Inc. All rights reserved.
+
+Type `help' to learn how to use Xshell prompt.
+[D:\~]$ 
+
+Connecting to 192.168.56.100:22...
+Connection established.
+To escape to local shell, press 'Ctrl+Alt+]'.
+
+WARNING! The remote SSH server rejected X11 forwarding request.
+Last login: Tue Aug 20 04:52:01 2019
+[root@bigdata ~]# yum install unzip
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.aliyun.com
+ * extras: mirrors.aliyun.com
+ * updates: mirrors.aliyun.com
+Resolving Dependencies
+--> Running transaction check
+---> Package unzip.x86_64 0:6.0-19.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=======================================================================================================
+ Package               Arch                   Version                       Repository            Size
+=======================================================================================================
+Installing:
+ unzip                 x86_64                 6.0-19.el7                    base                 170 k
+
+Transaction Summary
+=======================================================================================================
+Install  1 Package
+
+Total download size: 170 k
+Installed size: 365 k
+Is this ok [y/d/N]: y
+Downloading packages:
+unzip-6.0-19.el7.x86_64.rpm                                                     | 170 kB  00:00:14     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : unzip-6.0-19.el7.x86_64                                                             1/1 
+  Verifying  : unzip-6.0-19.el7.x86_64                                                             1/1 
+
+Installed:
+  unzip.x86_64 0:6.0-19.el7                                                                            
+
+Complete!
+[root@bigdata ~]# cd /opt
+[root@bigdata opt]# ls
+unapache-maven-3.5.4-bin.tar.gz  jdk-8u111-linux-x64.tar.gz
+data                           kibana-6.2.2-linux-x86_64.tar.gz
+demo.sh                        localrepo
+elasticsearch-6.2.2.tar.gz     mysql-community-release-el7-5.noarch.rpm
+inst                           node-v11.0.0.tar.gz
+install_jdk.sh                 test
+[root@bigdata opt]# ls
+apache-maven-3.5.4-bin.tar.gz  jdk-8u111-linux-x64.tar.gz
+data                           kibana-6.2.2-linux-x86_64.tar.gz
+demo.sh                        localrepo
+elasticsearch-6.2.2.tar.gz     mysql-community-release-el7-5.noarch.rpm
+elasticsearch-head-master.zip  node-v11.0.0.tar.gz
+inst                           test
+install_jdk.sh
+[root@bigdata opt]# unzip elasticsearch-head-master.zip 
+Archive:  elasticsearch-head-master.zip
+f1b28e84151abddd178ce21b859ce33621cf5620
+   creating: elasticsearch-head-master/
+ extracting: elasticsearch-head-master/.dockerignore  
+  inflating: elasticsearch-head-master/.gitignore  
+  inflating: elasticsearch-head-master/.jshintrc  
+  inflating: elasticsearch-head-master/Dockerfile  
+  inflating: elasticsearch-head-master/Dockerfile-alpine  
+  inflating: elasticsearch-head-master/Gruntfile.js  
+  inflating: elasticsearch-head-master/LICENCE  
+  inflating: elasticsearch-head-master/README.textile  
+   creating: elasticsearch-head-master/_site/
+  inflating: elasticsearch-head-master/_site/app.css  
+  inflating: elasticsearch-head-master/_site/app.js  
+   creating: elasticsearch-head-master/_site/base/
+ extracting: elasticsearch-head-master/_site/base/favicon.png  
+  inflating: elasticsearch-head-master/_site/base/loading.gif  
+  inflating: elasticsearch-head-master/_site/base/reset.css  
+   creating: elasticsearch-head-master/_site/fonts/
+  inflating: elasticsearch-head-master/_site/fonts/FontAwesome.otf  
+  inflating: elasticsearch-head-master/_site/fonts/fontawesome-webfont.eot  
+  inflating: elasticsearch-head-master/_site/fonts/fontawesome-webfont.svg  
+  inflating: elasticsearch-head-master/_site/fonts/fontawesome-webfont.ttf  
+  inflating: elasticsearch-head-master/_site/fonts/fontawesome-webfont.woff  
+  inflating: elasticsearch-head-master/_site/i18n.js  
+  inflating: elasticsearch-head-master/_site/index.html  
+   creating: elasticsearch-head-master/_site/lang/
+  inflating: elasticsearch-head-master/_site/lang/en_strings.js  
+  inflating: elasticsearch-head-master/_site/lang/fr_strings.js  
+  inflating: elasticsearch-head-master/_site/lang/ja_strings.js  
+  inflating: elasticsearch-head-master/_site/lang/pt_strings.js  
+  inflating: elasticsearch-head-master/_site/lang/tr_strings.js  
+  inflating: elasticsearch-head-master/_site/lang/zh-TW_strings.js  
+  inflating: elasticsearch-head-master/_site/lang/zh_strings.js  
+  inflating: elasticsearch-head-master/_site/vendor.css  
+  inflating: elasticsearch-head-master/_site/vendor.js  
+  inflating: elasticsearch-head-master/elasticsearch-head.sublime-project  
+  inflating: elasticsearch-head-master/grunt_fileSets.js  
+  inflating: elasticsearch-head-master/index.html  
+  inflating: elasticsearch-head-master/package.json  
+  inflating: elasticsearch-head-master/plugin-descriptor.properties  
+   creating: elasticsearch-head-master/proxy/
+   creating: elasticsearch-head-master/proxy/clusters/
+  inflating: elasticsearch-head-master/proxy/clusters/localhost9200.json  
+  inflating: elasticsearch-head-master/proxy/clusters/xpack.json  
+  inflating: elasticsearch-head-master/proxy/index.js  
+   creating: elasticsearch-head-master/proxy/recipes/
+  inflating: elasticsearch-head-master/proxy/recipes/http_proxy.js  
+   creating: elasticsearch-head-master/src/
+   creating: elasticsearch-head-master/src/app/
+  inflating: elasticsearch-head-master/src/app/app.css  
+  inflating: elasticsearch-head-master/src/app/app.js  
+   creating: elasticsearch-head-master/src/app/base/
+  inflating: elasticsearch-head-master/src/app/base/boot.js  
+ extracting: elasticsearch-head-master/src/app/base/favicon.png  
+  inflating: elasticsearch-head-master/src/app/base/loading.gif  
+  inflating: elasticsearch-head-master/src/app/base/reset.css  
+   creating: elasticsearch-head-master/src/app/data/
+  inflating: elasticsearch-head-master/src/app/data/boolQuery.js  
+  inflating: elasticsearch-head-master/src/app/data/dataSourceInterface.js  
+  inflating: elasticsearch-head-master/src/app/data/metaData.js  
+  inflating: elasticsearch-head-master/src/app/data/metaDataFactory.js  
+   creating: elasticsearch-head-master/src/app/data/model/
+  inflating: elasticsearch-head-master/src/app/data/model/model.js  
+  inflating: elasticsearch-head-master/src/app/data/model/modelSpec.js  
+  inflating: elasticsearch-head-master/src/app/data/query.js  
+  inflating: elasticsearch-head-master/src/app/data/queryDataSourceInterface.js  
+  inflating: elasticsearch-head-master/src/app/data/resultDataSourceInterface.js  
+   creating: elasticsearch-head-master/src/app/lang/
+  inflating: elasticsearch-head-master/src/app/lang/en_strings.js  
+  inflating: elasticsearch-head-master/src/app/lang/fr_strings.js  
+  inflating: elasticsearch-head-master/src/app/lang/ja_strings.js  
+  inflating: elasticsearch-head-master/src/app/lang/pt_strings.js  
+  inflating: elasticsearch-head-master/src/app/lang/tr_strings.js  
+  inflating: elasticsearch-head-master/src/app/lang/zh-TW_strings.js  
+  inflating: elasticsearch-head-master/src/app/lang/zh_strings.js  
+   creating: elasticsearch-head-master/src/app/services/
+   creating: elasticsearch-head-master/src/app/services/cluster/
+  inflating: elasticsearch-head-master/src/app/services/cluster/cluster.js  
+  inflating: elasticsearch-head-master/src/app/services/cluster/clusterSpec.js  
+   creating: elasticsearch-head-master/src/app/services/clusterState/
+  inflating: elasticsearch-head-master/src/app/services/clusterState/clusterState.js  
+  inflating: elasticsearch-head-master/src/app/services/clusterState/clusterStateSpec.js  
+   creating: elasticsearch-head-master/src/app/services/preferences/
+  inflating: elasticsearch-head-master/src/app/services/preferences/preferenceSpec.js  
+  inflating: elasticsearch-head-master/src/app/services/preferences/preferences.js  
+   creating: elasticsearch-head-master/src/app/ui/
+   creating: elasticsearch-head-master/src/app/ui/abstractField/
+ extracting: elasticsearch-head-master/src/app/ui/abstractField/abstractField.css  
+  inflating: elasticsearch-head-master/src/app/ui/abstractField/abstractField.js  
+   creating: elasticsearch-head-master/src/app/ui/abstractPanel/
+  inflating: elasticsearch-head-master/src/app/ui/abstractPanel/abstractPanel.css  
+  inflating: elasticsearch-head-master/src/app/ui/abstractPanel/abstractPanel.js  
+   creating: elasticsearch-head-master/src/app/ui/abstractWidget/
+  inflating: elasticsearch-head-master/src/app/ui/abstractWidget/abstractWidget.js  
+   creating: elasticsearch-head-master/src/app/ui/anyRequest/
+  inflating: elasticsearch-head-master/src/app/ui/anyRequest/anyRequest.css  
+  inflating: elasticsearch-head-master/src/app/ui/anyRequest/anyRequest.js  
+   creating: elasticsearch-head-master/src/app/ui/browser/
+  inflating: elasticsearch-head-master/src/app/ui/browser/browser.css  
+  inflating: elasticsearch-head-master/src/app/ui/browser/browser.js  
+   creating: elasticsearch-head-master/src/app/ui/button/
+  inflating: elasticsearch-head-master/src/app/ui/button/button.css  
+  inflating: elasticsearch-head-master/src/app/ui/button/button.js  
+  inflating: elasticsearch-head-master/src/app/ui/button/buttonDemo.js  
+   creating: elasticsearch-head-master/src/app/ui/checkField/
+  inflating: elasticsearch-head-master/src/app/ui/checkField/checkField.js  
+  inflating: elasticsearch-head-master/src/app/ui/checkField/checkFieldDemo.js  
+  inflating: elasticsearch-head-master/src/app/ui/checkField/checkFieldSpec.js  
+   creating: elasticsearch-head-master/src/app/ui/clusterConnect/
+ extracting: elasticsearch-head-master/src/app/ui/clusterConnect/clusterConnect.css  
+  inflating: elasticsearch-head-master/src/app/ui/clusterConnect/clusterConnect.js  
+  inflating: elasticsearch-head-master/src/app/ui/clusterConnect/clusterConnectSpec.js  
+   creating: elasticsearch-head-master/src/app/ui/clusterOverview/
+ extracting: elasticsearch-head-master/src/app/ui/clusterOverview/clusterOverview.css  
+  inflating: elasticsearch-head-master/src/app/ui/clusterOverview/clusterOverview.js  
+   creating: elasticsearch-head-master/src/app/ui/csvTable/
+  inflating: elasticsearch-head-master/src/app/ui/csvTable/csvTable.js  
+   creating: elasticsearch-head-master/src/app/ui/dateHistogram/
+  inflating: elasticsearch-head-master/src/app/ui/dateHistogram/dateHistogram.js  
+   creating: elasticsearch-head-master/src/app/ui/dialogPanel/
+  inflating: elasticsearch-head-master/src/app/ui/dialogPanel/dialogPanel.js  
+   creating: elasticsearch-head-master/src/app/ui/draggablePanel/
+  inflating: elasticsearch-head-master/src/app/ui/draggablePanel/draggablePanel.js  
+   creating: elasticsearch-head-master/src/app/ui/filterBrowser/
+  inflating: elasticsearch-head-master/src/app/ui/filterBrowser/filterBrowser.css  
+  inflating: elasticsearch-head-master/src/app/ui/filterBrowser/filterBrowser.js  
+   creating: elasticsearch-head-master/src/app/ui/header/
+  inflating: elasticsearch-head-master/src/app/ui/header/header.css  
+  inflating: elasticsearch-head-master/src/app/ui/header/header.js  
+   creating: elasticsearch-head-master/src/app/ui/helpPanel/
+  inflating: elasticsearch-head-master/src/app/ui/helpPanel/helpPanel.js  
+   creating: elasticsearch-head-master/src/app/ui/indexOverview/
+  inflating: elasticsearch-head-master/src/app/ui/indexOverview/indexOverview.js  
+   creating: elasticsearch-head-master/src/app/ui/indexSelector/
+  inflating: elasticsearch-head-master/src/app/ui/indexSelector/indexSelector.js  
+   creating: elasticsearch-head-master/src/app/ui/infoPanel/
+  inflating: elasticsearch-head-master/src/app/ui/infoPanel/infoPanel.css  
+  inflating: elasticsearch-head-master/src/app/ui/infoPanel/infoPanel.js  
+   creating: elasticsearch-head-master/src/app/ui/jsonPanel/
+  inflating: elasticsearch-head-master/src/app/ui/jsonPanel/jsonPanel.css  
+  inflating: elasticsearch-head-master/src/app/ui/jsonPanel/jsonPanel.js  
+   creating: elasticsearch-head-master/src/app/ui/jsonPretty/
+  inflating: elasticsearch-head-master/src/app/ui/jsonPretty/jsonPretty.css  
+  inflating: elasticsearch-head-master/src/app/ui/jsonPretty/jsonPretty.js  
+   creating: elasticsearch-head-master/src/app/ui/menuButton/
+  inflating: elasticsearch-head-master/src/app/ui/menuButton/menuButton.css  
+  inflating: elasticsearch-head-master/src/app/ui/menuButton/menuButton.js  
+   creating: elasticsearch-head-master/src/app/ui/menuPanel/
+  inflating: elasticsearch-head-master/src/app/ui/menuPanel/menuPanel.css  
+  inflating: elasticsearch-head-master/src/app/ui/menuPanel/menuPanel.js  
+   creating: elasticsearch-head-master/src/app/ui/nodesView/
+  inflating: elasticsearch-head-master/src/app/ui/nodesView/nodesView.css  
+  inflating: elasticsearch-head-master/src/app/ui/nodesView/nodesView.js  
+  inflating: elasticsearch-head-master/src/app/ui/nodesView/nodesViewDemo.js  
+   creating: elasticsearch-head-master/src/app/ui/page/
+  inflating: elasticsearch-head-master/src/app/ui/page/page.js  
+   creating: elasticsearch-head-master/src/app/ui/panelForm/
+  inflating: elasticsearch-head-master/src/app/ui/panelForm/panelForm.css  
+  inflating: elasticsearch-head-master/src/app/ui/panelForm/panelForm.js  
+   creating: elasticsearch-head-master/src/app/ui/queryFilter/
+  inflating: elasticsearch-head-master/src/app/ui/queryFilter/queryFilter.css  
+  inflating: elasticsearch-head-master/src/app/ui/queryFilter/queryFilter.js  
+   creating: elasticsearch-head-master/src/app/ui/refreshButton/
+  inflating: elasticsearch-head-master/src/app/ui/refreshButton/refreshButton.js  
+  inflating: elasticsearch-head-master/src/app/ui/refreshButton/refreshButtonDemo.js  
+  inflating: elasticsearch-head-master/src/app/ui/refreshButton/refreshButtonSpec.js  
+   creating: elasticsearch-head-master/src/app/ui/resultTable/
+  inflating: elasticsearch-head-master/src/app/ui/resultTable/resultTable.js  
+   creating: elasticsearch-head-master/src/app/ui/selectMenuPanel/
+  inflating: elasticsearch-head-master/src/app/ui/selectMenuPanel/selectMenuPanel.css  
+  inflating: elasticsearch-head-master/src/app/ui/selectMenuPanel/selectMenuPanel.js  
+   creating: elasticsearch-head-master/src/app/ui/sidebarSection/
+  inflating: elasticsearch-head-master/src/app/ui/sidebarSection/sidebarSection.css  
+  inflating: elasticsearch-head-master/src/app/ui/sidebarSection/sidebarSection.js  
+   creating: elasticsearch-head-master/src/app/ui/splitButton/
+  inflating: elasticsearch-head-master/src/app/ui/splitButton/splitButton.css  
+  inflating: elasticsearch-head-master/src/app/ui/splitButton/splitButton.js  
+  inflating: elasticsearch-head-master/src/app/ui/splitButton/splitButtonDemo.js  
+   creating: elasticsearch-head-master/src/app/ui/structuredQuery/
+  inflating: elasticsearch-head-master/src/app/ui/structuredQuery/structuredQuery.css  
+  inflating: elasticsearch-head-master/src/app/ui/structuredQuery/structuredQuery.js  
+   creating: elasticsearch-head-master/src/app/ui/table/
+  inflating: elasticsearch-head-master/src/app/ui/table/table.css  
+  inflating: elasticsearch-head-master/src/app/ui/table/table.js  
+   creating: elasticsearch-head-master/src/app/ui/textField/
+  inflating: elasticsearch-head-master/src/app/ui/textField/textField.js  
+  inflating: elasticsearch-head-master/src/app/ui/textField/textFieldDemo.js  
+   creating: elasticsearch-head-master/src/app/ui/toolbar/
+  inflating: elasticsearch-head-master/src/app/ui/toolbar/toolbar.css  
+  inflating: elasticsearch-head-master/src/app/ui/toolbar/toolbar.js  
+   creating: elasticsearch-head-master/src/app/ux/
+  inflating: elasticsearch-head-master/src/app/ux/class.js  
+  inflating: elasticsearch-head-master/src/app/ux/dragdrop.js  
+  inflating: elasticsearch-head-master/src/app/ux/fieldCollection.js  
+  inflating: elasticsearch-head-master/src/app/ux/observable.js  
+  inflating: elasticsearch-head-master/src/app/ux/singleton.js  
+  inflating: elasticsearch-head-master/src/app/ux/singletonSpec.js  
+  inflating: elasticsearch-head-master/src/app/ux/table.css  
+   creating: elasticsearch-head-master/src/app/ux/templates/
+  inflating: elasticsearch-head-master/src/app/ux/templates/templateSpec.js  
+  inflating: elasticsearch-head-master/src/app/ux/templates/templates.js  
+   creating: elasticsearch-head-master/src/vendor/
+   creating: elasticsearch-head-master/src/vendor/dateRangeParser/
+  inflating: elasticsearch-head-master/src/vendor/dateRangeParser/date-range-parser.js  
+   creating: elasticsearch-head-master/src/vendor/font-awesome/
+   creating: elasticsearch-head-master/src/vendor/font-awesome/css/
+  inflating: elasticsearch-head-master/src/vendor/font-awesome/css/font-awesome.css  
+  inflating: elasticsearch-head-master/src/vendor/font-awesome/css/font-awesome.min.css  
+   creating: elasticsearch-head-master/src/vendor/font-awesome/fonts/
+  inflating: elasticsearch-head-master/src/vendor/font-awesome/fonts/FontAwesome.otf  
+  inflating: elasticsearch-head-master/src/vendor/font-awesome/fonts/fontawesome-webfont.eot  
+  inflating: elasticsearch-head-master/src/vendor/font-awesome/fonts/fontawesome-webfont.svg  
+  inflating: elasticsearch-head-master/src/vendor/font-awesome/fonts/fontawesome-webfont.ttf  
+  inflating: elasticsearch-head-master/src/vendor/font-awesome/fonts/fontawesome-webfont.woff  
+   creating: elasticsearch-head-master/src/vendor/graphael/
+  inflating: elasticsearch-head-master/src/vendor/graphael/g.raphael.standalone.js  
+   creating: elasticsearch-head-master/src/vendor/i18n/
+  inflating: elasticsearch-head-master/src/vendor/i18n/i18n.js  
+   creating: elasticsearch-head-master/src/vendor/joey/
+  inflating: elasticsearch-head-master/src/vendor/joey/joey.js  
+   creating: elasticsearch-head-master/src/vendor/jquery/
+  inflating: elasticsearch-head-master/src/vendor/jquery/jquery.js  
+   creating: elasticsearch-head-master/src/vendor/nohtml/
+  inflating: elasticsearch-head-master/src/vendor/nohtml/jquery-nohtml.js  
+   creating: elasticsearch-head-master/test/
+  inflating: elasticsearch-head-master/test/demo.html  
+   creating: elasticsearch-head-master/test/generators/
+  inflating: elasticsearch-head-master/test/generators/conflictingField.sh  
+  inflating: elasticsearch-head-master/test/generators/delete_all_indices.sh  
+  inflating: elasticsearch-head-master/test/generators/multi_type.sh  
+  inflating: elasticsearch-head-master/test/generators/twitter_feed.sh  
+  inflating: elasticsearch-head-master/test/generators/twitter_river.sh  
+  inflating: elasticsearch-head-master/test/perf.html  
+   creating: elasticsearch-head-master/test/spec/
+  inflating: elasticsearch-head-master/test/spec/specHelper.js  
+[root@bigdata opt]# ls
+apache-maven-3.5.4-bin.tar.gz  install_jdk.sh
+data                           jdk-8u111-linux-x64.tar.gz
+demo.sh                        kibana-6.2.2-linux-x86_64.tar.gz
+elasticsearch-6.2.2.tar.gz     localrepo
+elasticsearch-head-master      mysql-community-release-el7-5.noarch.rpm
+elasticsearch-head-master.zip  node-v11.0.0.tar.gz
+inst                           test
+[root@bigdata opt]# mv elasticsearch-head-master inst/eshead
+[root@bigdata opt]# cd inst
+[root@bigdata inst]# ls
+es622  eshead  jdk181  maven354  node-v11.0.0
+[root@bigdata inst]# cd eshead
+[root@bigdata eshead]# ls
+Dockerfile                          grunt_fileSets.js  plugin-descriptor.properties  src
+Dockerfile-alpine                   index.html         proxy                         test
+elasticsearch-head.sublime-project  LICENCE            README.textile
+Gruntfile.js                        package.json       _site
+[root@bigdata eshead]# npm config set registry http://registry.npm.taobao.org^C
+[root@bigdata eshead]# npm config set registry http://registry.npm.taobao.org
+-bash: npm: command not found
+[root@bigdata eshead]# cd ..
+[root@bigdata inst]# ls
+cdes622  eshead  jdk181  maven354  node-v11.0.0
+[root@bigdata inst]# cd es
+-bash: cd: es: No such file or directory
+[root@bigdata inst]# cd es622/
+[root@bigdata es622]# ls
+bin  config  data  lib  LICENSE.txt  logs  modules  NOTICE.txt  plugins  README.textile
+[root@bigdata es622]# cd config/
+[root@bigdata config]# ls
+elasticsearch.yml  jvm.options  log4j2.properties
+[root@bigdata config]# vi elasticsearch.yml 
+[root@bigdata config]# npm config set registry http://registry.npm.taobao.org
+-bash: npm: command not found
+[root@bigdata config]# 

@@ -1,0 +1,24 @@
+#!/bin/bash
+#install_mysql
+#1\uninstall  mariadb-libs-5.5.52-1.el7.x86_64
+rpm -qa |grep mariadb|xargs rpm -e --nodeps
+#2\Check that MySQL is installed on your system
+rpm -qa | grep mysql
+#3\download mysql
+wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+#4\install_mysql-community-release-el7-5.noarch.rp
+rpm -ivh mysql-community-release-el7-5.noarch.rpm
+#5\install_mysql
+yum install mysql-server
+#6\check the mysql is or not done
+rpm -qa | grep mysql
+#7\start mysql
+systemctl start mysql.service
+systemctl enable mysql.service
+mysql -uroot << EOF
+use mysql;
+update user set password=PASSWORD("0213") where User='root';
+flush privileges;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '0213';
+EOF
+echo 'Complete'

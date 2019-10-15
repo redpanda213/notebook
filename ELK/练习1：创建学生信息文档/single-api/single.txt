@@ -1,0 +1,10 @@
+PUT /stu/doc/1
+{"id": 1, "studentNo": "TH-CHEM-2016-C001", "name": "Jonh Smith", "major":"Chemistry", "gpa": 4.8, "yearOfBorn": 2000, "classOf": 2016,  "interest": "soccer, basketball, badminton, chess"}
+PUT /stu/doc/2
+{"id": 2, "studentNo": "TH-PHY-2018-C001", "name": "Isaac Newton", "major":"Physics", "gpa": 3.6, "yearOfBorn": 2001, "classOf": 2018,  "interest": "novel, soccer, cooking"}
+PUT /stu/doc/3
+{"id": 3, "studentNo": "BU-POLI-2016-C001", "name": "John Kennedy", "major":"Politics", "gpa": 4.2, "yearOfBorn": 2000, "classOf": 2016,  "interest": "talking, dating, boxing, shooting, chess"}
+PUT /stu/doc/4
+{"id": 4, "studentNo": "BU-POLI-2015-C001", "name": "John Kerry",  "major":"Politics", "gpa": 4.1, "yearOfBorn": 1999, "classOf": 2015,  "interest": "money, basketball"}
+PUT /stu/doc/5
+{"id": 5, "studentNo": "BU-ARTS-2016-C002", "name": "Da Vinci",  "major":"Arts", "gpa": 4.8, "yearOfBorn": 1995, "classOf": 2016,  "interest": "drawing, music, wine"}

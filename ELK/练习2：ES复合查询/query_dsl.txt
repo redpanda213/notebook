@@ -1,0 +1,24 @@
+//姓名为“john”
+//在2016年后入学
+//喜欢boxing
+
+GET stu/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {"match": {
+          "name": "John"
+        }},
+        {"match": {
+          "interest": "boxing"
+        }},
+        {"range": {
+          "classOf": {
+            "gte": 2016
+          }
+        }}
+      ]
+    }
+  }
+}

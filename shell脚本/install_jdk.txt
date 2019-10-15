@@ -1,0 +1,42 @@
+#!/bin/bash
+
+#if [ $1 -eq 1 ];then
+#setup wget
+yum install -y wget
+#config yum aliyun source
+cd /etc/yum.repos.d
+mv CentOS-Base.repo CentOS-Base.repo_back
+wget -O /etc/yum.repos
+yum clean all
+yum makecache
+#fi
+#1.install JDK
+#1.1 get params incloud file path
+#path=$1
+#1.2 check jdk
+mkdir /opt/inst
+ckp=`rpm -qa|grep java`
+if [ -e $ckp ];then
+	echo 'no setup'
+	#tar jdk file
+	tar -zxvf $1 -C /opt/inst
+	#search folder
+	jdkfolder=`ls /opt/|grep jdk`
+	#change folder name
+	mv /opt/inst/$jdkfolder /opt/inst/jdk180
+	#check profile
+	jdkcfg='cat /etc/profile |grep JAVA_HOME'
+	if [ -e $jdkcfg ];then
+	#modify configuration
+	echo 'export JAVA_HOME=/opt/inst/jdk180' >> /etc/profile
+	echo 'export PATH=$PATH:$JAVA_HOME/bin' >> /etc/profile
+	echo 'export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/jre/lib/tools.jar' >> /etc/profile
+	#source
+	source /etc/profile
+	fi
+else
+	echo 'you already setup jdk'
+fi
+#2.configuration
+#3.no password login
+#4.install mysql
