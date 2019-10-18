@@ -83,3 +83,10 @@ kafka-run-class.sh kafka.tools.ConsumerOffsetChecker --broker-info --group $grou
 bin/kafka-consumer-groups.sh --zookeeper 127.0.0.1:2181 --list
 ```
 
+查看topic内容
+
+```shell
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --zookeeper 127.0.0.1:2181 --topic topicName --from-beginning
+
+```
+
