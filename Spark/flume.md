@@ -90,3 +90,8 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --zookeeper 127.
 
 ```
 
+```shell
+bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --list
+__consumer_offsets
+```
+
