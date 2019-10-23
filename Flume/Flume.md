@@ -8,10 +8,6 @@ cp flume-env.sh.template flume-env.sh
 
 
 
-
-
-
-
 ```
 vi control.conf
 
@@ -40,6 +36,10 @@ rpm -iUv nc-1.84-22.el6.x86_64.rpm
 
 ```shell
 flume/bin/flume-ng agent -n wt -c /opt/bigdata/flume160/conf/ -f /opt/bigdata/flume160/conf/control.conf -Dflume.root.logger=INFO,console
+
+```
+
+```
 
 ```
 

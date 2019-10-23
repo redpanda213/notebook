@@ -21,7 +21,7 @@ kafka-console-consumer.sh --zookeeper 127.0.0.1:2181 --bootstrap-server 127.0.0.
 ```
 
 ```shell
-#3
+#4
 #创建一个kafka的消息队列，并设置分区和副本数
 kafka-topics.sh --create --topic user_friends --zookeeper 127.0.0.1:2181 --partitions 1 --replication-factor 1
 
@@ -93,5 +93,12 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --zookeeper 127.
 ```shell
 bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --list
 __consumer_offsets
+```
+
+删除topic
+
+```
+bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --delete --topic user_friend
+
 ```
 

@@ -8,12 +8,30 @@ kafka/bin/kafka-streams-application-reset.sh --zookeeper 127.0.0.1:2181 --applic
 
 java开发
 
-1、导入以来包
+1、导入依赖包以及JDK 1.8解释器
 
 ```xml
-<dependency>
-	
+<dependency>        
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka-streams</artifactId>
+    <version>1.1.0</version>
 </dependency>
+ <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+————————————————
+版权声明：本文为CSDN博主「JerryDyq」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/dyq51/article/details/81346539
 ```
 
 
@@ -61,4 +79,47 @@ public class Mydemo{
 > #IntelliJ IDEA导出 jar文件 运行不了，no main manifest attribute，找不到main函数#
 >
 > https://blog.csdn.net/zhan107876/article/details/97883972
+
+```java
+<dependency>        
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka-streams</artifactId>
+    <version>2.2.0</version>
+</dependency>
+```
+
+![1571731408048](D:\笔记\python\kafkaStreaming.png)
+
+```
+
+```
+
+```scala
+val rd = spark.read.format("csv").option("header","true").load("file:///opt/data/user_friends_new.csv")
+
+
+```
+
+```scala
+
+val rdd = sc.textFile("file:///opt/data/fans.csv")
+val rdd1 = rdd.map(x=>x.split(",")).map{case Array(x,y)=>(x,y)}
+
+val rdd2 = rdd.map(x=>x.split(",")).map{case Array(x,y)=>(x,y)}.map(x=>(x._1,x._2.split(" ")))
+
+val rdd3 = rdd2.map(x=>x._2.map(y=>(x._1,y)))
+
+val rdd4 = rdd2.flatMap(x=>x._2.map(y=>(x._1,y)))
+
+
+
+
+
+
+
+
+
+
+
+```
 
