@@ -1,14 +1,8 @@
-# Kafka  Streaming
+# 	Kafka  Streaming应用实例
 
-重置 
+## java开发
 
-```shell
-kafka/bin/kafka-streams-application-reset.sh --zookeeper 127.0.0.1:2181 --application-id user_friends --input-topics user_friends
-```
-
-java开发
-
-1、导入依赖包以及JDK 1.8解释器
+### 1、导入依赖包以及JDK 1.8解释器
 
 ```xml
 <dependency>        
@@ -29,14 +23,15 @@ java开发
             </plugin>
         </plugins>
     </build>
-————————————————
-版权声明：本文为CSDN博主「JerryDyq」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+----------------------------------------------------------------
 原文链接：https://blog.csdn.net/dyq51/article/details/81346539
 ```
 
 
 
 `kafka-streaming 1.0.0`
+
+### 2、编写代码
 
 ```java
 public class Mydemo{
@@ -94,7 +89,12 @@ public class Mydemo{
 
 ```
 
+将Array((1,2 3 4 5 6 7 8 9))
+
+
+
 ```scala
+//spark算子完成同样的操作
 val rd = spark.read.format("csv").option("header","true").load("file:///opt/data/user_friends_new.csv")
 
 
@@ -110,16 +110,8 @@ val rdd2 = rdd.map(x=>x.split(",")).map{case Array(x,y)=>(x,y)}.map(x=>(x._1,x._
 val rdd3 = rdd2.map(x=>x._2.map(y=>(x._1,y)))
 
 val rdd4 = rdd2.flatMap(x=>x._2.map(y=>(x._1,y)))
-
-
-
-
-
-
-
-
-
-
-
 ```
 
+
+
+## 

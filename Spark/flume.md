@@ -50,13 +50,13 @@ bin/kafka-console-consumer.sh --topic __consumer_offsets --zookeeper 127.0.0.1:2
 spark/bin/spark-submit /opt/test_jars/mykafka.jar --class com.kgc.mykafka.MyConsumer
 ```
 
-查看topic消息
+**查看topic消息**
 
 ```shell
 bin/kafka-run-class.sh kafka.tools.GetOffsetShell --topic user_friends --time -1 --broker-list 127.0.0.1:9092 --partitions 0
 ```
 
-重置
+**重置**
 
 ```shell
 #重置使用前需要在
@@ -64,14 +64,11 @@ bin/kafka-run-class.sh kafka.tools.GetOffsetShell --topic user_friends --time -1
 
 delete.topic.enable=true
 
-```
-
-
-
-```shell
-bin/kafka-topics.sh -delete --zookeeper 127.0.0.1:2181 --topic user_friends
+bin/kafka-streams-application-reset.sh --zookeeper 127.0.0.1:2181 --application-id user_friends --input-topics user_friends
 
 ```
+
+**---???----**
 
 ```shell
 kafka-run-class.sh kafka.tools.ConsumerOffsetChecker --broker-info --group $group --topic $topic --zookeeper $zk_host:21
@@ -83,7 +80,7 @@ kafka-run-class.sh kafka.tools.ConsumerOffsetChecker --broker-info --group $grou
 bin/kafka-consumer-groups.sh --zookeeper 127.0.0.1:2181 --list
 ```
 
-查看topic内容
+**查看topic内容**
 
 ```shell
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --zookeeper 127.0.0.1:2181 --topic topicName --from-beginning
@@ -95,7 +92,7 @@ bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --list
 __consumer_offsets
 ```
 
-删除topic
+**删除topic**
 
 ```
 bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --delete --topic user_friend
