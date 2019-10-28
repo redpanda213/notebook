@@ -66,14 +66,14 @@ hadoop的特点：
 - 灵活，可储存任意类型数据
 - 开源，社区活跃
 
-|      | RDNMS | Hadoop |
-| ---- | ----- | ------ |
-|      |       |        |
-|      |       |        |
-|      |       |        |
-|      |       |        |
-|      |       |        |
-|      |       |        |
+|          |                   RDNMS                    |               Hadoop               |
+| :------: | :----------------------------------------: | :--------------------------------: |
+|   格式   |                写数据时设置                |            读数据时设置            |
+|   速度   |                读数据速度快                |            写数据速度快            |
+| 数据监管 |                 标准结构化                 |            任意结构数据            |
+| 数据处理 |               有限的处理能力               |           强大的处理能力           |
+| 数据类型 |                 结构化数据                 |     结构化、半结构化、非结构化     |
+| 应用场景 | 交互式OLAP分析、ACID事务处理、企业业务系统 | 处理非结构化数据、海量数据存储计算 |
 
 ## Hadoop生态圈
 
@@ -158,9 +158,9 @@ StandbyNameNode
 
 5、DataNode ---> ack packet --->FSData OutputStream
 
-6、
+6、client ---> close FSData OutputStream
 
-7、
+7、Distributed FileSystem ---> complete ---> NameNode
 
 ### HDFS读文件
 
@@ -168,13 +168,13 @@ StandbyNameNode
 
 2、Distributed FileSystem ---> NameNode
 
-3、client ---> read ---> FSData OutputStream
+3、client ---> read ---> FSData InputStream
 
-4、
+4、FSData InputStrem --->  read  --->  DataNode
 
-5、
+5、FSData InputStrem --->  read  --->  DataNode
 
-6、client ---> close ---> FSData OutputStream
+6、client ---> close ---> FSData InputStream
 
 ### HDFS文件格式
 
