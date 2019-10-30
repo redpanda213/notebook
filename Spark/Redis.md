@@ -45,3 +45,19 @@ cd redis-2.8.17/src
 
 `KEYS pattern`查找所有符合给定模式( pattern)的 key 。
 
+```
+set KEY VALUE
+set name Mary
+
+get name
+```
+
+```
+select 0
+get name
+//OK
+select 1
+get name
+//(nil)
+```
+

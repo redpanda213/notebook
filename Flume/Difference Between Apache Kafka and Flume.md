@@ -6,7 +6,7 @@ kafka将处理传入的数据流，而不管其来源和目的地。它是一个
 
  In simplistic terms, Kafka’s publish-subscribe system is made up of publishers, [Kafka cluster](https://www.educba.com/course/apache-kafka-tutorials/), and consumers/subscribers. Data published by the publisher are stored  as logs. Subscribers can also act as publishers and vice-versa. A  subscriber requests for a subscription and Kafka forwards the data to  the requested subscriber. Typically, there can be numerous publishers  and subscribers on different topics on a Kafka cluster. Likewise, an  application can act as both, a publisher and subscriber. A message  published for a topic can have multiple interested subscribers; the  system processes data for every interested subscriber. Some of the use  cases where Kafka is widely used are: 
 
- 简单来说，Kafka的发布-订阅系统由发布者，Kafka集群和消费者/订阅者组成。 发布者发布的数据存储为日志。 订户还可以充当发布者，反之亦然。 订阅者请求订阅，Kafka将数据转发给请求的订阅者。 通常，在Kafka集群上，可以有许多不同主题的发布者和订阅者。 同样，应用程序既可以充当发布者，也可以充当订阅者。 针对某个主题发布的消息可以有多个感兴趣的订阅者； 系统为每个感兴趣的订户处理数据。 Kafka被广泛使用的一些用例是： 
+ 简单来说，Kafka的发布-订阅系统由发布者，Kafka集群和消费者/订阅者组成。 发布者发布的数据存储为日志。 订阅者还可以充当发布者，反之亦然。 订阅者请求订阅，Kafka将数据转发给请求的订阅者。 通常，在Kafka集群上，可以有许多不同主题的发布者和订阅者。 同样，应用程序既可以充当发布者，也可以充当订阅者。 针对某个主题发布的消息可以有多个感兴趣的订阅者； 系统为每个感兴趣的订户处理数据。 Kafka被广泛使用的一些用例是： 
 
 - Track activities on a website跟踪网站上的活动
 - Stream processing流处理
@@ -42,7 +42,13 @@ Apache Flume is based on streaming data flows and has a flexible architecture. F
 
  ![Apache Kafka vs Flume Infographics](D:\笔记\Spark\Apache-Kafka-vs-Flume.jpg) 
 
- 
+|                     |                         Apache kafka                         |                            Flume                             |
+| ------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| Meaning             | Kafka runs as a cluster and handles incoming high volumn data streams in real time. Kafka has three main components,the publisher,Kafka cluster/manager,and subscriber. Kafka stores stream of records into different categories or topics. | Flume is a tool to collect log data from distributed web servers.The data collected will land into HDFS for further analysis.Flume is a highly reliable and configurable tool.Flume is highly efficient and robust in processing log files,both in batch and real-time processing. |
+| Concept             | Kafka will treat each topic partitions as an ordered set of messages. Based on publish-subscribe architecture an does not track messages read by subscribers and who is the publisher. Kafka retains all messages or data as logs where subscibers are responsible to track the location in each log. | Flume can take in streaming data from multiple sources for storage and analysis for use in HBase or Hadoop. Ensures guaranteed data delivery because both the receiver and sender agents evoke the transaction to ensure guaranted semantics. It can scale horizontally. |
+| Basis  of formation |  An efficient,fault-tolerant and scalable messaging system.  |  Flume is a service or tool for gathering data into Hadoop.  |
+| Application Areas   | Monitor data from distributed applications. Make data available to multiple subscribers based on their interests. Log aggregation services. | Progess transaction logs in application servers,web servers,etc.For example,e-commerce,online retail portals,social medis,etc. |
+| Approach            | Kafka is required to efficiently process real-time data streams without data loss. Need to ensure data delivery even during machine failures,hence it is fault-tolerant system | Need to gather big data either in streaming or in batch mode from different sources. Efficient when working woth logs. |
 
 ### Key Differences between Apache Kafka vs Flume
 
