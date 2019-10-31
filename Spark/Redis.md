@@ -61,3 +61,9 @@ get name
 //(nil)
 ```
 
+**查看端口号的进程号**
+
+```she
+netstat -lnp | grep 6379
+```
+
