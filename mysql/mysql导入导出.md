@@ -18,3 +18,9 @@ mysqldump -u 用户名 -p 数据库名 表明 > 导出的文件名
 mysqldump -u root -p dbname 
 ```
 
+3、导出一个数据库结构
+
+```shell
+mysqldump -u root -p -d --add-table dbname > d:/dbname_db.sql
+```
+
