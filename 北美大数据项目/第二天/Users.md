@@ -24,11 +24,30 @@ root
 
 ```scala
 
+dfUsers.count
+dfUsers.select("user_id").distinct.count
 ```
 
 
 
+```scala
+import org.apache.spark.sql.types._
+import org.apache.spark.sql.functions._
+import spark.implicits._
 
+val df = dfUsers.withColumn("birthyear",$"birthyear".cast(IntegerType)).filter($"birthyear".isNotNull && $"birthyear" > lit(1900)).count
+```
+
+
+
+```scala
+val dfFinalUser = dfUsers1.crossJoin(dfAvgAge).withColumn("birthyear",when($"birthyear".isNull,$"avg_year").otherwise($"birthyear")).drop("avg_year")
+dfFinalUser.show
+```
+
+```scala
+val df2 = dfUser1.withColunm("gender",when($"gender"===lit("male")||$"gender"===lit("female"),$"gender").otherwise(lit("unknown")))
+```
 
 
 
