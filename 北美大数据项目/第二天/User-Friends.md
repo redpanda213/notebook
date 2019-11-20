@@ -27,7 +27,7 @@ dfUserF.distinct.count
 列转行，将friend中的id  变成一个user_id 对应一个 friend_id   并将原列friends移除
 
 ```scala
-val df = dfUserFriend.withColumnRenamed("user","user_id").withColumn("friend_id",explode(split($"friend"," "))).drop("friends")
+val df = dfUserF.withColumnRenamed("user","user_id").withColumn("friend_id",explode(split($"friends"," "))).drop("friends")
 ```
 
 还是上面的要求，如何用SQL完成它呢？
@@ -66,6 +66,8 @@ val df3 = df.filter($"friend_id".isNotNull).distinct.count
 /*
 Long = 30386387     
 */
+val df4 = df.filter($"friend_id".isNotNull).count
+// Long = 30386403 
 ```
 
 统计谁的朋友最多
