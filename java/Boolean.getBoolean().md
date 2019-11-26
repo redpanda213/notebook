@@ -18,7 +18,7 @@ public class SimpleQuestion{
 
 结果是什么呢？ 两个结果都是false。
 
-我们看一下getBoolean()方法的源码，可以看到用了`System.getProperty`说明用的是系统属性，而不是转换方法。
+我们看一下getBoolean()方法的源码，可以看到用了`System.getProperty()` 是从`System properties`中查询该`key`对应的value，将查询到的`value`转换为boolean值 ，而不是转换方法。
 
 ```java
   public static boolean getBoolean(String name) {
