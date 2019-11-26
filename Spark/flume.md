@@ -99,3 +99,9 @@ bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --delete --topic user_friend
 
 ```
 
+**查看topic的分区和副本情况**
+
+```
+bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --describe --topic users
+```
+
