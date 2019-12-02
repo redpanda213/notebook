@@ -1,0 +1,112 @@
+<map version="1.0.1">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node CREATED="1575254357049" ID="ID_1833188826" MODIFIED="1575258980143" STYLE="bubble">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Oozie
+    </p>
+  </body>
+</html></richcontent>
+<edge COLOR="#808080" STYLE="bezier" WIDTH="1"/>
+<font NAME="SansSerif" SIZE="11"/>
+<node COLOR="#111111" CREATED="1575254488740" ID="ID_613088497" MODIFIED="1575255131913" POSITION="right" TEXT="&#x5b89;&#x88c5;">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+<node COLOR="#111111" CREATED="1575254490698" ID="ID_1409095140" MODIFIED="1575255131914" POSITION="right" TEXT="&#x67b6;&#x6784;">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+<node COLOR="#111111" CREATED="1575254562651" ID="ID_1753244279" MODIFIED="1575255131914" POSITION="right" TEXT="&#x7ec4;&#x4ef6;">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+<node COLOR="#111111" CREATED="1575254503488" ID="ID_462350918" MODIFIED="1575255131914" POSITION="right" TEXT="&#x4f18;&#x7f3a;&#x70b9;">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="12"/>
+<node CREATED="1575259254411" ID="ID_1472428992" MODIFIED="1575259258372" TEXT="pros&#x4f18;&#x70b9;"/>
+<node CREATED="1575259258887" ID="ID_428449022" MODIFIED="1575259267852" TEXT="cons&#x7f3a;&#x70b9;"/>
+</node>
+<node COLOR="#111111" CREATED="1575254493384" ID="ID_1064264554" MODIFIED="1575259020164" POSITION="right" TEXT="&#x5de5;&#x4f5c;&#x6d41;&#x7a0b;">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="12"/>
+<node COLOR="#111111" CREATED="1575254637701" ID="ID_740554440" MODIFIED="1575255131914" TEXT="&#x5b9a;&#x4e49;">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+<node COLOR="#111111" CREATED="1575254751120" ID="ID_1066599657" MODIFIED="1575255131914" TEXT="&#x64cd;&#x4f5c;">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="12"/>
+<node COLOR="#111111" CREATED="1575254833402" ID="ID_1744828224" MODIFIED="1575255131915" TEXT="&#x6982;&#x8ff0;">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node COLOR="#111111" CREATED="1575254836960" ID="ID_699018295" MODIFIED="1575255131915" TEXT="MapReduce action">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node COLOR="#111111" CREATED="1575254850104" ID="ID_402884070" MODIFIED="1575255131915" TEXT="FS(HDFS) Action">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node COLOR="#111111" CREATED="1575254864808" ID="ID_1500782907" MODIFIED="1575255131915" TEXT="JAVA Action">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node COLOR="#111111" CREATED="1575254887921" ID="ID_1976828834" MODIFIED="1575255131915" TEXT="Shell Action">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node COLOR="#111111" CREATED="1575254897257" ID="ID_1343271208" MODIFIED="1575255131916" TEXT="Hive Action">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node COLOR="#111111" CREATED="1575254905032" ID="ID_679564465" MODIFIED="1575255131916" TEXT="Hive2 Action">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node COLOR="#111111" CREATED="1575254915825" ID="ID_800275299" MODIFIED="1575255131916" TEXT="DISCP Action">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node COLOR="#111111" CREATED="1575254924650" ID="ID_1681281238" MODIFIED="1575255131916" TEXT="Spark Action">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node COLOR="#111111" CREATED="1575254934472" ID="ID_405985172" MODIFIED="1575255131916" TEXT="Sub-Workflow Action">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+</node>
+<node CREATED="1575258710535" FOLDED="true" ID="ID_1390596949" MODIFIED="1575258997099" TEXT="&#x72b6;&#x6001;&#x8f6c;&#x6362;">
+<node CREATED="1575258729641" ID="ID_1054245002" MODIFIED="1575258973885">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="photo/image-20191202115310880.png" />
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier"/>
+</node>
+</node>
+<node CREATED="1575259022560" ID="ID_107778723" MODIFIED="1575259028035" TEXT="&#x6d41;&#x7a0b;&#x63a7;&#x5236;">
+<node CREATED="1575259029105" ID="ID_1633166836" MODIFIED="1575259032204" TEXT="Start"/>
+<node CREATED="1575259032791" ID="ID_1462397854" MODIFIED="1575259035588" TEXT="End"/>
+<node CREATED="1575259036167" ID="ID_1003103426" MODIFIED="1575259039422" TEXT="Kill"/>
+<node CREATED="1575259057120" ID="ID_553226265" MODIFIED="1575259062012" TEXT="Decision"/>
+<node CREATED="1575259062655" ID="ID_1029672293" MODIFIED="1575259074932" TEXT="Fork &amp; Join"/>
+</node>
+<node CREATED="1575259092039" ID="ID_103517748" MODIFIED="1575259137889" TEXT="&#x5de5;&#x4f5c;&#x6d41;&#x7a0b;&#x5e94;&#x7528;">
+<node CREATED="1575259137890" ID="ID_1290412520" MODIFIED="1575259163572" TEXT="deployment &amp; Execution &#x90e8;&#x7f72;&#x548c;&#x6267;&#x884c;"/>
+</node>
+</node>
+<node CREATED="1575259174927" ID="ID_993590332" MODIFIED="1575259247980" POSITION="right" TEXT="coordinator &#x5b9a;&#x65f6;&#x63d0;&#x4ea4;&#x5668;"/>
+</node>
+</map>
