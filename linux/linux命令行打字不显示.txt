@@ -1,0 +1,7 @@
+
+#关闭输入回显
+stty -echo
+
+
+#开启输入回显
+stty echo
