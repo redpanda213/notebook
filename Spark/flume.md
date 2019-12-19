@@ -17,7 +17,7 @@ bin/flume-ng agent --conf conf -f /opt/bigdata/flume160/conf/file.conf -n wt -Df
 ```shell
 #3
 #开启消费者
-kafka-console-consumer.sh --zookeeper 127.0.0.1:2181 --bootstrap-server 127.0.0.1:9092 --topic user_friends
+kafka-console-consumer.sh --zookeeper 127.0.0.1:2181 --from-beginning --topic user_friends
 ```
 
 ```shell

@@ -37,5 +37,78 @@
 </node>
 </node>
 </node>
+<node CREATED="1576755693021" ID="ID_837008161" MODIFIED="1576756152664" POSITION="left" TEXT="hadoop">
+<node CREATED="1576755698936" ID="ID_397951141" MODIFIED="1576755705645" TEXT="&#x914d;&#x7f6e;&#x6587;&#x4ef6; 8 &#x4e2a;">
+<node CREATED="1576755706464" ID="ID_1613733661" MODIFIED="1576755713981" TEXT="core-site.xml"/>
+<node CREATED="1576755714192" ID="ID_1931937611" MODIFIED="1576755719621" TEXT="hdfs-site.xml"/>
+<node CREATED="1576755720263" ID="ID_21173454" MODIFIED="1576755727197" TEXT="yarn-site.xml"/>
+<node CREATED="1576755727423" ID="ID_1975036540" MODIFIED="1576755736449" TEXT="mapred-site.xml"/>
+<node CREATED="1576755979824" ID="ID_1702921491" MODIFIED="1576755984965" TEXT="hdfs-env.sh"/>
+<node CREATED="1576755985304" ID="ID_1293797594" MODIFIED="1576756008414" TEXT="yarn-env.sh"/>
+<node CREATED="1576755990433" ID="ID_141751900" MODIFIED="1576755997413" TEXT="mapred-env.sh"/>
+<node CREATED="1576756014207" ID="ID_897693172" MODIFIED="1576756018933" TEXT="slaves"/>
+</node>
+<node CREATED="1576756046504" ID="ID_214950315" MODIFIED="1576756098910" TEXT="&#x642d;&#x5efa;&#x96c6;&#x7fa4;&#x5fc5;&#x987b;&#x5b89;&#x88c5;&#x7684;&#x4e24;&#x4e2a;&#x4e1c;&#x897f;">
+<node CREATED="1576756100002" ID="ID_438401069" MODIFIED="1576756102157" TEXT="ssh"/>
+<node CREATED="1576756102664" ID="ID_1649875811" MODIFIED="1576756104342" TEXT="jdk"/>
+</node>
+<node CREATED="1576756153272" ID="ID_431458050" MODIFIED="1576756158749" TEXT="hdfs&#x7684;&#x6d41;&#x7a0b;"/>
+<node CREATED="1576756162992" ID="ID_1157962175" MODIFIED="1576756210478" TEXT="mapreduce&#x3001;shuffle">
+<node CREATED="1576756304832" ID="ID_1447845265" MODIFIED="1576756314141" TEXT="map&#x7684;&#x6d41;&#x7a0b;">
+<node CREATED="1576756315153" ID="ID_1322461865" MODIFIED="1576756325227" TEXT="&#x5148;&#x5230;&#x5206;&#x533a;&#x7684;&#x65b9;&#x6cd5;"/>
+<node CREATED="1576756327433" ID="ID_1122424108" MODIFIED="1576756448532" TEXT="&#x73af;&#x5f62;&#x7f13;&#x51b2;&#x533a;&#xff0c;&#x5206;&#x533a;&#xff0c;&#x6392;&#x5e8f;&#x3002;">
+<node CREATED="1576756452201" ID="ID_19291860" MODIFIED="1576756460268" TEXT="&#x9ed8;&#x8ba4;100M&#xff0c;&#x5230;80%&#x65f6;&#x6ea2;&#x5199;&#x3002;"/>
+<node CREATED="1576756462569" ID="ID_729017577" MODIFIED="1576756486400" TEXT="&#x6392;&#x5e8f;&#xff1a;&#x5bf9;key&#x7684;&#x7d22;&#x5f15;&#x8fdb;&#x884c;&#x5feb;&#x6392;.&#x6309;&#x7167;&#x5b57;&#x5178;&#x987a;&#x5e8f;&#x8fdb;&#x884c;&#x6392;&#x5e8f;&#x3002;">
+<node CREATED="1576756504394" ID="ID_1165983043" MODIFIED="1576756512215" TEXT="&#x600e;&#x4e48;&#x6392;&#x5e8f;&#xff1a;&#x5feb;&#x6392;"/>
+<node CREATED="1576756513122" ID="ID_1633543193" MODIFIED="1576756525063" TEXT="&#x6309;&#x7167;&#x4ec0;&#x4e48;&#x6392;&#x5e8f;&#xff1a;&#x5b57;&#x5178;&#x987a;&#x5e8f;"/>
+<node CREATED="1576756525594" ID="ID_1995880403" MODIFIED="1576756538815" TEXT="&#x5bf9;&#x4ec0;&#x4e48;&#x8fdb;&#x884c;&#x6392;&#x5e8f;&#xff1a;key&#x7684;&#x7d22;&#x5f15;"/>
+</node>
+</node>
+<node CREATED="1576756414193" ID="ID_788284488" MODIFIED="1576756605096" TEXT="&#x6ea2;&#x5199;(&#x4ece;&#x73af;&#x5f62;&#x7f13;&#x51b2;&#x533a;&#x51fa;&#x6765;)">
+<node CREATED="1576756607843" ID="ID_1710429750" MODIFIED="1576756629333" TEXT="&#x5bf9;&#x6ea2;&#x5199;&#x7684;&#x6587;&#x4ef6;&#x8fdb;&#x884c;&#x5f52;&#x5e76;&#x3001;&#x6392;&#x5e8f;"/>
+</node>
+<node CREATED="1576756366241" ID="ID_902139854" MODIFIED="1576756736881" TEXT="&#x7136;&#x540e;&#x5c06;&#x6587;&#x4ef6;&#x653e;&#x5230;&#x76f8;&#x5e94;&#x7684;&#x5206;&#x533a;&#xff0c;&#x6392;&#x597d;&#x5e8f;&#xff0c;&#x7b49;&#x5f85;reduce&#x6765;&#x62c9;&#x53d6;"/>
+<node CREATED="1576756689779" ID="ID_1938281651" MODIFIED="1576756799919" TEXT="reduce&#x62c9;&#x53d6;&#x540e;&#xff0c;&#x5148;&#x653e;&#x5230;&#x5185;&#x5b58;&#x4e2d;&#xff0c;&#x5185;&#x5b58;&#x4e0d;&#x591f;&#x540e;&#xff0c;&#x6ea2;&#x5199;&#x5230;&#x78c1;&#x76d8;&#x3002;&#x65e0;&#x8bba;&#x5185;&#x5b58;&#x8fd8;&#x662f;&#x78c1;&#x76d8;&#x4e2d;&#x7684;&#x6570;&#x636e;&#xff0c;&#x8981;&#x8fdb;&#x884c;&#x5f52;&#x5e76;&#x6392;&#x5e8f;&#xff0c;&#x5f52;&#x5e76;&#x6392;&#x5e8f;&#x540e;&#x5199;&#x5165;&#x5230;reduce&#x4e2d;&#x3002;&#x5199;&#x5165;&#x4e4b;&#x524d;&#x53ef;&#x4ee5;&#x8fdb;&#x884c;&#x4e00;&#x6b21;&#x5206;&#x7ec4;&#x6392;&#x5e8f;&#x3002;"/>
+</node>
+<node CREATED="1576756212104" ID="ID_944167300" MODIFIED="1576756841283" TEXT="shuffle">
+<node CREATED="1576756245921" ID="ID_1840770169" MODIFIED="1576756890322" TEXT="&#x53d1;&#x751f;&#x9636;&#x6bb5;&#xff1a;map&#x65b9;&#x6cd5;&#x4e4b;&#x540e;&#xff0c;reduce&#x65b9;&#x6cd5;&#x4e4b;&#x524d;"/>
+<node CREATED="1576756824316" ID="ID_819112060" MODIFIED="1576757312551" TEXT="&#x6574;&#x4e2a;&#x9636;&#x6bb5;&#x53ef;&#x4ee5;&#x6709;&#x54ea;&#x4e9b;&#x4f18;&#x5316;">
+<node CREATED="1576756895340" ID="ID_1578781067" MODIFIED="1576756966264" TEXT="1&#x3001;&#x73af;&#x5f62;&#x7f13;&#x51b2;&#x533a;&#xff1b;&#x9ed8;&#x8ba4;100M/80%&#xff1b;&#x53ef;&#x4ee5;&#x8c03;&#x6574;&#x4e3a;200M/(90%-95%)&#xff0c;&#x51cf;&#x5c11;&#x6ea2;&#x5199;&#x7684;&#x6b21;&#x6570;&#x3002;"/>
+<node CREATED="1576756974348" ID="ID_954411159" MODIFIED="1576757036666" TEXT="2&#x3001;&#x5f52;&#x5e76;&#x3002;&#x4e00;&#x6b21;&#x9ed8;&#x8ba4;&#x5f52;&#x5e76;10&#x4e2a;&#xff0c;&#x53ef;&#x4ee5;&#x8c03;&#x6574;&#x5582;15&#x6216;20&#xff0c;&#x524d;&#x63d0;&#x662f;&#x673a;&#x5668;&#x6027;&#x80fd;&#x597d;&#x3002;"/>
+<node CREATED="1576757069284" ID="ID_1372734851" MODIFIED="1576757137888" TEXT="3&#x3001;combine&#xff1b;&#x4f7f;&#x7528;&#x6761;&#x4ef6;&#xff1a;&#x4e0d;&#x5f71;&#x54cd;&#x6700;&#x7ec8;&#x7684;&#x4e1a;&#x52a1;&#x903b;&#x8f91;&#x3002;">
+<node CREATED="1576757140108" ID="ID_18386389" MODIFIED="1576757162986" TEXT="&#x5f71;&#x54cd;&#x7684;&#x60c5;&#x51b5;&#xff1a;&#x6c42;&#x5e73;&#x5747;&#x503c;"/>
+<node CREATED="1576757164036" ID="ID_1834676384" MODIFIED="1576757176193" TEXT="&#x4e0d;&#x5f71;&#x54cd;&#xff1a;&#x6c42;&#x548c;&#x3001;&#x6c47;&#x603b;"/>
+</node>
+<node CREATED="1576757178597" ID="ID_128990744" MODIFIED="1576757630011" TEXT="4&#x3001;&#x51cf;&#x5c11;&#x78c1;&#x76d8;&#x7684;I/O&#xff0c;&#x53ef;&#x4ee5;&#x5bf9;&#x6570;&#x636e;&#x8fdb;&#x884c;&#x538b;&#x7f29;&#x3002;&#x5728;map&#x8f93;&#x5165;&#x8f93;&#x51fa;&#x548c;reduce&#x7684;&#x8f93;&#x51fa;&#xff0c;&#x8fd9;&#x4e09;&#x4e2a;&#x5730;&#x65b9;&#x53ef;&#x4ee5;&#x5bf9;&#x6570;&#x636e;&#x8fdb;&#x884c;&#x538b;&#x7f29;&#x3002;&#x5728;&#x8f93;&#x5165;&#x7684;&#x5730;&#x65b9;&#xff0c;&#x5e94;&#x4f7f;&#x5b83;&#x80fd;&#x591f;&#x652f;&#x6301;&#x5207;&#x7247;&#xff1b;&#x800c;&#x5728;&#x8f93;&#x51fa;&#x7684;&#x5730;&#x65b9;&#xff0c;&#x5e94;&#x4f7f;&#x5b83;&#x901f;&#x5ea6;&#x5c3d;&#x53ef;&#x80fd;&#x7684;&#x5feb;&#x3002;&#x8be6;&#x7ec6;&#x6765;&#x8bf4;&#xff0c;&#x652f;&#x6301;&#x5207;&#x7247;&#x7684;&#x538b;&#x7f29;&#x6709;lzo&#x3002;&#x8f93;&#x51fa;&#x901f;&#x5ea6;&#x5feb;&#xff0c;&#x53ef;&#x4f7f;&#x7528;lzo&#x3002;&#x6c38;&#x4e45;&#x4fdd;&#x5b58;&#x53ef;&#x4ee5;&#x9009;&#x62e9;&#x538b;&#x7f29;&#x7387;&#x6700;&#x9ad8;&#x7684;&#xff0c;&#x4f46;&#x662f;&#x901f;&#x5ea6;&#x6162;&#x3002;&#x4e00;&#x6b21;&#x7684;&#x8f93;&#x51fa;&#x4f5c;&#x4e3a;&#x4e0b;&#x4e00;&#x6b21;&#x7684;&#x8f93;&#x5165;&#xff0c;&#x53ef;&#x4ee5;&#x4f7f;&#x7528;&#x5207;&#x7247;&#x3002;"/>
+</node>
+</node>
+<node CREATED="1576757661007" ID="ID_71215510" MODIFIED="1576757664436" TEXT="reduce">
+<node CREATED="1576757668439" ID="ID_1324071319" MODIFIED="1576757681172" TEXT="&#x62c9;&#x53d6;&#x4e2a;&#x6570;&#x53ef;&#x4ee5;&#x8bbe;&#x7f6e;&#xff0c;&#x57fa;&#x4e8e;&#x673a;&#x5668;&#x6761;&#x4ef6;&#x3002;"/>
+<node CREATED="1576757681576" ID="ID_1638776797" MODIFIED="1576757694757" TEXT="&#x62c9;&#x53d6;&#x5230;&#x5185;&#x5b58;&#xff0c;&#x53ef;&#x4ee5;&#x589e;&#x5927;&#x5185;&#x5b58;&#x3002;"/>
+</node>
+<node CREATED="1576757713240" ID="ID_1372679879" MODIFIED="1576757718908" TEXT="task">
+<node CREATED="1576757719776" ID="ID_1832986849" MODIFIED="1576757831754" TEXT="&#x4e00;&#x4e2a;maptask&#x6216;reducetask&#x9ed8;&#x8ba4;&#x53ef;&#x4f7f;&#x7528;&#x7684;&#x8d44;&#x6e90;&#x4e0a;&#x7ebf;&#x662f;1G&#xff0c;&#x53ef;&#x4ee5;&#x8bbe;&#x7f6e;&#x3002;">
+<node CREATED="1576757857968" ID="ID_1372623469" MODIFIED="1576757868909" TEXT="mapreduce.map.memory.mb"/>
+<node CREATED="1576757869169" ID="ID_1773296660" MODIFIED="1576757887726" TEXT="mapreduce.reduce.memory.mb"/>
+</node>
+<node CREATED="1576757847705" ID="ID_92510861" MODIFIED="1576757901261" TEXT="cpu">
+<node CREATED="1576757909288" ID="ID_1324665516" MODIFIED="1576757923662" TEXT="mapreduce.map.cpu.vcores">
+<node CREATED="1576757940584" ID="ID_1805368005" MODIFIED="1576757965182" TEXT="&#x9ed8;&#x8ba4;1"/>
+</node>
+<node CREATED="1576757923985" ID="ID_783668794" MODIFIED="1576757933309" TEXT="mapreduce.reduce.cpu.vcores">
+<node CREATED="1576757958257" ID="ID_1889966660" MODIFIED="1576757962517" TEXT="&#x9ed8;&#x8ba4;1"/>
+</node>
+</node>
+</node>
+<node CREATED="1576757999472" ID="ID_1407200751" MODIFIED="1576758010366" TEXT="&#x5bb9;&#x9519;&#x53c2;&#x6570;">
+<node CREATED="1576758011257" ID="ID_1156246903" MODIFIED="1576758022598" TEXT="mapreduce.map.maxattempts">
+<node CREATED="1576758038913" ID="ID_121718874" MODIFIED="1576758044230" TEXT="&#x9ed8;&#x8ba4;4"/>
+</node>
+<node CREATED="1576758022809" ID="ID_1318657252" MODIFIED="1576758034549" TEXT="mapreduce.reduce.maxattempts">
+<node CREATED="1576758222748" ID="ID_581304710" MODIFIED="1576758224671" TEXT="&#x9ed8;&#x8ba4;4"/>
+</node>
+</node>
+</node>
+</node>
 </node>
 </map>
