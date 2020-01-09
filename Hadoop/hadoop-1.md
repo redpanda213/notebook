@@ -107,7 +107,7 @@ YARN：分布式资源管理系统
 
 优点：
 
-- 支持处理i超大文件
+- 支持处理超大文件
 - 可运行到廉价的机器上
 
 缺点：
@@ -127,9 +127,9 @@ YARN：分布式资源管理系统
   - 合并NameNode的edit logs到fsimage文件中（**先保证数据不丢失，edit-logs操作日志，合并到fsimage中，操作再执行一遍来完成合并，生成一个新的fsimage，加载到内存中**）
   - 辅助NN将内存中元数据信息持久化
 
-namenode：存储源数据信息
+- namenode：存储源数据信息
 
-datanode：自己管理data，基于linux，每个datanode组成成一个大的文件系统。存放着切割成块Block的数据
+- datanode：自己管理data，基于linux，每个datanode组成成一个大的文件系统。存放着切割成块Block的数据
 
 ### HDFS副本机制
 
